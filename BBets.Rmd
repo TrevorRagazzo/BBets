@@ -90,12 +90,25 @@ The fair bet that we saw was doing a bet of 4.3868, but we also raised the odds.
 
 
 
+```{r}
+Class40= vector("numeric")
+for(i in 1:1000){
+  Class40[i] <- BrLw(odds = 28)
+}
 
+favstats(Class40)
+lcl = mean(Class40) - 2*sd(Class40)
+ucl = mean(Class40) + 2*sd(Class40)
+options(digits = 1)
+print(paste(lcl, ucl))
 
+```
 
+We needed to make this bet fair so we decided to make the class sizes smaller, so we found the number of 28 students in a class. The mean is `r mean(Class40)` the lowest we wa was `r lcl` and the highest we have seen is `r ucl`
 
 
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If professor Brownlow is consistantly making or losing money how could he change his payout so that his profits center on zero?  Also discuss what size his class should be in order to have his current scheme balance at zero profit.!-->
 
+In conclusion we see a result of Brownlow making profit and being in the advantage. The only way the bet is fair is if we switch the bet to 4.38:1 or if we chnage the class size to 28 students. 
