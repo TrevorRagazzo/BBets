@@ -58,6 +58,7 @@ print(paste(lcl, ucl))
 ```
 
 The lower end is `r lcl` to the upper end `r ucl`
+This is showing us that the bet is 2:1 and it seems like Brownlows is making a steady profit.
 
 # What are the fair odds? Use manipulation of odds in the function to tune Brownlows earnings to zero. 
 
